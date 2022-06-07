@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body-container{
+    font-family: sans-serif;
+    background-image: url(img/El-Helado-De-La-Reina-Ester-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{             
+    background-image: url(/img/El-Helado-De-La-Reina-Ester-1.jpg)
+}
+
+.logo { display: flex;
+    background-color: white;
+}
+     
+.ul-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-decoration: none;
+    padding: 40px;
+    color: rgb(0, 0, 0);            
+}
+.ul-container li:hover{
+    transform: scale(2);
+    transition: all 3s;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+}
+
+hr{     height: 5px;   }    
+
+
+
+
+h1{     
+    font-size: 60px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    animation: changecolor 10s infinite;
+}
+
+@keyframes changecolor{
+    0%{
+         background-color: aquamarine;    
+    }
+    25%{
+         background-color: aqua;   
+    }
+    50%{
+         background-color: rgb(24, 123, 136);           
+    }
+    100%{
+         background-color: rgb(5, 126, 207);   
+    }
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: left;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 20px;
+}
+
+.helado-p{
+    font-size: 25px;
+    font-style: italic;
+    padding: 16rem;
+    
+}
+
+.footer{
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+    display: flex; 
+    justify-content: center;
+    border: 2px solid rgb(8, 7, 7);
+}         
+.sabores{
+    padding: 3em;
+    color: rgb(1, 32, 30);
+}
+
+.productos-sabores{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 30px;
+    font-style: oblique;
+    
+}
+.productos-sabores li{
+    border: 1px solid black;
+    padding: 2em;
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+
+}
+
+.header-productos{
+    background-color: coral;
+    padding: 15px;
+    
+}
+.logo-productos{
+    background-color: coral;
+}
+.section-img img { 
+    padding: 5px;
+    margin: 3em;
+
+
+}
+
+.flecha{
+    width: 2%;
+}
+
+.helado{
+    width: 40%;
+    background-color: rgb(0,110,110);
+}
+.chinin-foto{
+    width: 40.5%;
+    background-color: rgb(0, 110, 110) ;
+}
+
+.main-productos{
+    background-color: aqua;
+    padding: 15px;
+}
+
+.footer-productos {
+    background-color: rgb(0, 110, 110);
+    display: flex;
+    justify-content: center;
+
+}  
+
+.h2-productos{
+    font-size: 30px;
+    padding: 3em;
+}
+
+.ul-productos{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: aquamarine;
+    }
+
+    .productos-sabores{
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: 10px;
+        font-style: oblique;
+        
+    }
+
+    .productos-sabores li{
+        padding: 1em;
+        text-align: center;
+        list-style: none;
+        font-size: 5px;
+    
+    }
+
+    .helado-p{
+        font-size: 10px;
+        font-style: italic;
+        padding: 5rem;
+        
+    }
+    
+
+    .flecha{
+        width: 2%;
+        display: none
+    }
+    
+    .helado{
+        width: 40%;
+        background-color: rgb(0,110,110);
+        display: none
+    }
+    .chinin-foto{
+        width: 40.5%;
+        background-color: rgb(0, 110, 110) ;
+        display: none
+    }
+}
+  
